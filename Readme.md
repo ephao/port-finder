@@ -4,28 +4,28 @@ This Python script helps you find unused ports on a specified host within a give
 
 ## Files
 
-- `port_finder.py`: Main script to run the port finder
-- `port_utils.py`: Utility functions for checking ports
-- `config.py`: Configuration settings
+- `port-finder-main.py`: Main script to run the port finder
+- `port-finder-utils.py`: Utility functions for checking ports
+- `port-finder-config.py`: Configuration settings
 
 ## Usage
 
 Run the script from the command line with the following syntax:
 
 ```
-python port_finder.py <start_port> <end_port> [--host <hostname>]
+python port-finder-main.py <start_port> <end_port> [--host <hostname>]
 ```
 
 Example:
 ```
-python port_finder.py 8000 9000
+python port-finder-main.py 8000 9000
 ```
 
 This will check for unused ports between 8000 and 9000 on localhost.
 
 To specify a different host:
 ```
-python port_finder.py 80 100 --host example.com
+python port-finder-main.py 80 100 --host example.com
 ```
 
 ## Requirements
